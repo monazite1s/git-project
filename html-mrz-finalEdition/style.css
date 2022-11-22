@@ -42,6 +42,8 @@
 .bg3 {
     background-color: #ffffff;
     height: 845px;
+    position: relative;
+    z-index: -2;
 }
 
 .bg4 {
@@ -242,11 +244,12 @@ a:hover {
     left: 530px;
     width: 365px;
     height: 237px;
+    z-index: 1;
 }
 
 .backboard3link {
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 365px;
@@ -263,7 +266,7 @@ a:hover {
 
 .block2_back2 {
     position: relative;
-    z-index: 6;
+    z-index: 0;
     top: 0;
     width: 1920px;
     height: 845px;
@@ -634,7 +637,7 @@ a:hover {
 /* 尾图设置 */
 .footbox {
     position: relative;
-    top:0px;
+    top: 0px;
     width: 1920px;
     height: 1010px;
 }
