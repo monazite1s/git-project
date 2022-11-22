@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.origin {
+    width: auto;
+    position: relative;
+    margin: auto;
+}
+
+.bg {
+    width: auto;
+    min-width: 1920px;
+}
+
+.bg1 {
+    display: block;
+    margin: auto;
+    height: 814px;
+}
+
+.bg1-1 {
+    background: url(img/bg1.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg1-2 {
+    background-color: black;
+    opacity: 0.5;
+    height: 814px;
+    width: auto;
+}
+
+.bg2 {
+    background-color: #eae7e8;
+    height: 448px;
+}
+
+.bg3 {
+    background-color: #ffffff;
+    height: 845px;
+}
+
+.bg4 {
+    background-color: #eae7e8;
+    height: 434px;
+}
+
+.bg5 {
+    background-color: #6f6d6d;
+    height: 348px;
+}
+
+.bg6 {
+    background-color: #ffffff;
+    height: 1010px;
+}
+
+.bg7 {
+    display: block;
+    margin: 0px;
+    background: url(img/back.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 341px;
+}
+
+.bg0 {
+    display: block;
+    margin: 0px;
+    background: url(img/footbg1.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1010px;
+    bottom: 0;
+}
+
+.bg0-1 {
+    text-align: center;
+    background-color: #535353;
+    height: 33px;
+    bottom: 0;
+}
+
+.block2index {
+    height: 1727px;
+}
+
+.block3index {
+    height: 2008px;
+}
+
+/* 头图代码开始 */
+
+/* 版心设置 */
+.w {
+    width: 1920px;
+    margin: auto;
+}
+
+.page {
+    width: auto;
+    margin: auto;
+}
+
+/* 头图设置 */
+.header {
+    position: relative;
+    top: -814px;
+    width: 1920px;
+    height: 814px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 图片设置 */
+.pic {
+    position: absolute;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+/* 文本设置 */
+.txt {
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+}
+
+/* 页面头图文本设置 */
+.headtxt {
+    width: 233px;
+    height: 97px;
+    z-index: 6;
+}
+
+/* 红色背景 */
+.redco {
+    background: #e8024d;
+    top: 0px;
+}
+
+/* 设置logo */
+.lamy {
+    margin-top: 18px;
+    margin-left: 15px;
+    width: 209px;
+    height: 48px;
+
+}
+
+/* 设置文本格式 */
+a {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 100px;
+    width: 233px;
+    height: 97px;
+}
+
+a:hover {
+    color: #e8024d;
+}
+
+/* 页面中心文本设置 */
+.maintxt {
+    bottom: 275px;
+}
+
+/* 头图代码结束 */
+
+/* 二图代码开始 */
+
+/* 二图设置 */
+.block2 {
+    position: relative;
+    overflow: visible;
+    top: -1727px;
+    width: 1920px;
+}
+
+/* 二图的背景设置 */
+.block2_back1 {
+    display: block;
+    background-color: #eae7e8;
+    width: 1920px;
+    height: 448px;
+}
+
+.pic5 {
+    position: absolute;
+    top: 37px;
+    left: 411px;
+    width: 422px;
+    height: 504px;
+}
+
+/* 背景板设置 */
+.backboard {
+    background-color: #ffffff;
+    display: flex;
+    position: absolute;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.backboard0 {
+    top: 37px;
+    right: 359px;
+    width: 731px;
+    height: 509px;
+}
+
+.backboard1 {
+    box-shadow: 0 0 0 0;
+    left: 80px;
+    top: 75px;
+    width: 473px;
+    height: 48px;
+}
+
+.backboard2 {
+    box-shadow: 0 0 0 0;
+    /* font-family: "宋体";
+    color: black; */
+    top: 185px;
+    left: 81px;
+    right: 58px;
+    /* font-size: 21px; */
+}
+
+.backboard3 {
+    position: absolute;
+    background-color: #e8024d;
+    opacity: 0.7;
+    top: 374px;
+    left: 530px;
+    width: 365px;
+    height: 237px;
+}
+
+.backboard3link {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 365px;
+    height: 237px;
+}
+
+.play {
+    position: absolute;
+    top: 74px;
+    left: 153px;
+    width: 58px;
+    height: 58px;
+}
+
+.block2_back2 {
+    position: relative;
+    z-index: 6;
+    top: 0;
+    width: 1920px;
+    height: 845px;
+}
+
+.title {
+    position: absolute;
+    top: 262px;
+    left: 805px;
+    width: 301px;
+    height: 43px;
+}
+
+.txtblock {
+    position: absolute;
+    display: flex;
+    justify-content: stretch;
+    left: 363px;
+    z-index: 6;
+    top: 381px;
+    width: 1200px;
+}
+
+.txtblock1 {
+    z-index: 6;
+    width: 400px;
+    height: 224px;
+}
+
+.txth {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.txtp {
+    color: black;
+    margin-top: 33px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.button1 {
+    background-color: #2b2b2b;
+    position: absolute;
+    left: 838px;
+    bottom: 45px;
+    width: 241px;
+    height: 65px;
+}
+
+.buttontxt1 {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    margin: 0px;
+    top: 14px;
+    left: 66px;
+    /* justify-content: center;
+    text-align: center; */
+}
+
+.buttonlink {
+    position: absolute;
+    font-size: 25px;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 241px;
+    height: 65px;
+}
+
+.buttonicon1 {
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    width: 40px;
+    height: 35px;
+}
+
+.txtblock2 {
+    z-index: 6;
+    width: 400px;
+    height: 224px;
+}
+
+.txtblock3 {
+    z-index: 6;
+    width: 400px;
+    height: 224px;
+}
+
+.block2_back3 {
+    position: relative;
+    background-color: #eae7e8;
+    overflow: hidden;
+    text-align: center;
+    width: 1920px;
+    height: 434px;
+}
+
+.redPan {
+    position: absolute;
+    z-index: 5;
+    left: 360px;
+    top: -39px;
+}
+
+.yellowPan {
+    position: absolute;
+    z-index: 4;
+    left: 360px;
+    bottom: 0px;
+}
+
+.logo {
+    position: absolute;
+    background-color: #e8024d;
+    z-index: 6;
+    top: 200px;
+    left: 402px;
+    width: 89px;
+    height: 35px;
+}
+
+.logoImg {
+    position: absolute;
+    top: 10px;
+    left: 19px;
+}
+
+/* 二图结束 */
+
+/* 三图开始 */
+.block3 {
+    display: block;
+    position: relative;
+    top: -1698px;
+    width: 1920px;
+    height: 2008px;
+}
+
+.sayinghead1 {
+    position: absolute;
+    font-family: Segoe Print;
+    font-size: 19px;
+    top: 79px;
+    left: 880px;
+}
+
+.sayinghead2 {
+    position: absolute;
+    font-family: Britannic Bold;
+    font-size: 25px;
+    top: 113px;
+    left: 810px;
+}
+
+.rollscreen {
+    position: absolute;
+    z-index: 6;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.6);
+    top: 169px;
+    left: 545px;
+    width: 814px;
+    height: 273px;
+}
+
+.rolldiv {
+    position: absolute;
+    z-index: 6;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 814px;
+    height: 273px;
+}
+
+.headImg {
+    position: absolute;
+    top: 40px;
+    left: 380px;
+    width: 71px;
+    height: 71px;
+}
+
+.rollstick {
+    position: absolute;
+    justify-content: space-around;
+    z-index: 10;
+    width: 814px;
+    height: 9px;
+    bottom: 31px;
+}
+
+.status {
+    position: absolute;
+    background-color: #e6e4e4;
+    width: 43px;
+    height: 9px;
+}
+
+.status1 {
+    left: 325px;
+}
+
+.status2 {
+    left: 398px;
+}
+
+.status3 {
+    left: 471px;
+}
+
+.status:hover {
+    position: absolute;
+    background-color: #807a7a;
+    width: 43px;
+    height: 9px;
+}
+
+.sayinghead3 {
+    position: absolute;
+    font-family: Segoe Print;
+    color: black;
+    font-size: 19px;
+    top: 356px;
+    left: 380px;
+}
+
+.sayinghead4 {
+    position: absolute;
+    font-family: Britannic Bold;
+    color: black;
+    font-size: 25px;
+    top: 385px;
+    left: 337px;
+}
+
+.picBottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.button2 {
+    background-color: #4a3e42;
+    position: absolute;
+    left: 838px;
+    bottom: 45px;
+    width: 241px;
+    height: 65px;
+}
+
+.comment {
+    position: absolute;
+    font-size: 17px;
+    color: #000;
+    top: 140px;
+    left: 145px;
+    width: 529px;
+    height: 56px;
+}
+
+.show {
+    position: absolute;
+    top: 346px;
+    width: 1920px;
+    height: 1010px;
+}
+
+.displayer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 275px;
+    left: 500px;
+    width: 884px;
+    height: 551px;
+}
+
+.picLine {
+    width: 248px;
+    height: 550px;
+}
+
+.show2 {
+    position: absolute;
+    height: 652px;
+    bottom: 0;
+    width: 1920px;
+}
+
+.displayer2 {
+    position: absolute;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+    z-index: 6;
+    top: 90px;
+    left: 544px;
+    width: 874px;
+    height: 431px;
+}
+
+.pic7 {
+    position: absolute;
+    top: 17px;
+    left: 22px;
+}
+
+.pic8 {
+    position: absolute;
+    top: 153px;
+    left: 22px;
+}
+
+.pic9 {
+    position: absolute;
+    top: 288px;
+    left: 22px;
+}
+
+.para {
+    position: absolute;
+    font-family: Britannic Bold;
+    font-size: 19px;
+    color: black;
+    right: 29px;
+    width: 426px;
+    height: 55px;
+}
+
+.para1 {
+    top: 43px;
+}
+
+.para2 {
+    top: 168px;
+}
+
+.para3 {
+    top: 305px;
+}
+
+.button3 {
+    background-color: #e8024d;
+    position: absolute;
+    left: 838px;
+    bottom: 45px;
+    width: 241px;
+    height: 65px;
+}
+
+.buttontxt3 {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    margin: 0px;
+    top: 14px;
+    left: 30px;
+}
+
+/* 三图结束 */
+
+/* 尾图设置 */
+.footbox {
+    position: relative;
+    top:0px;
+    width: 1920px;
+    height: 1010px;
+}
+
+.picfoot {
+    position: absolute;
+    bottom: 0;
+}
+
+.picfoot1 {
+    position: absolute;
+    bottom: 36px;
+}
+
+.jss1 {
+    margin-bottom: 705px;
+    margin-left: 792px;
+    margin-right: 816px;
+    width: 315px;
+    height: 76px;
+
+}
+
+.jssr {
+    margin-bottom: 705px;
+    right: 710px;
+    width: 75px;
+    height: 34px;
+}
+
+.jssl {
+    margin-bottom: 705px;
+    left: 674px;
+    width: 68px;
+    height: 33px;
+}
+
+.txtfoot {
+    width: 244px;
+    height: 14px;
+    bottom: 9px;
+    margin-left: 838px;
+    z-index: 6;
+}
