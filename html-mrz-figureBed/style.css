@@ -4,6 +4,17 @@
     color: #ffffff;
 }
 
+.origin {
+    width: 6000px;
+    position: relative;
+    margin: auto;
+}
+
+.bg1 {
+    display: block;
+    background: url("img/bg1");
+    background-size: 100%;
+}
 /* 头图代码开始 */
 
 /* 版心设置 */
@@ -11,18 +22,18 @@
     width: 1920px;
     margin: auto;
 }
-
+.page {
+    width: 6000px;
+    margin: auto;
+}
 /* 头图设置 */
 .header {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 1920px;
     height: 814px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
-
 }
 
 /* 图片设置 */
@@ -48,7 +59,6 @@
 
 /* 页面头图文本设置 */
 .headtxt {
-    display: flex;
     width: 233px;
     height: 97px;
     z-index: 6;
@@ -93,15 +103,14 @@ a {
 /* 二图设置 */
 .block2{
     position: relative;
-    margin-top: 844px;
+    overflow: visible;
     width: 1920px;
 }
 
 /* 二图的背景设置 */
 .block2_back1 {
-    position: relative;
+    display: block;
     background-color: #eae7e8;
-    /* top: 845px; */
     width: 1920px;
     height: 448px;
 }
@@ -200,7 +209,6 @@ a {
 }
 
 .txtblock1 {
-    /* background-color: aqua; */
     z-index: 6;
     width: 400px;
     height: 224px;
@@ -259,14 +267,12 @@ a {
 }
 
 .txtblock2 {
-    /* background-color: aqua; */
     z-index: 6;
     width: 400px;
     height: 224px;
 }
 
 .txtblock3 {
-    /* background-color: aqua; */
     z-index: 6;
     width: 400px;
     height: 224px;
@@ -314,6 +320,7 @@ a {
 
 /* 三图开始 */
 .block3 {
+    display: block;
     position: relative;
     background-color: #6f6d6d;
     top:0px;
@@ -447,7 +454,7 @@ a {
     position: absolute;
     background-color: #ffffff;
     top: 346px;
-    width: 1920px;
+    width:1920px;
     height: 1010px;
 }
 
