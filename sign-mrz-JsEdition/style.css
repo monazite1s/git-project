@@ -1,3 +1,4 @@
+/* 基础设置开始 */
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +10,7 @@ input {
     color: white;
 }
 
-a {
-    position: absolute;
-    z-index: 100;
-}
-
-@font-face {
-    font-family: 'iconfont';
-    src: url('font/iconfont.woff2?t=1669304772186') format('woff2'),
-        url('font/iconfont.woff?t=1669304772186') format('woff'),
-        url('font/iconfont.ttf?t=1669304772186') format('truetype');
-}
-
+/* 隐藏小眼睛 */
 input[type="password"]::-ms-reveal {
     display: none;
 }
@@ -32,6 +22,28 @@ input[type="password"]::-ms-clear {
 input[type="password"]::-o-clear {
     display: none;
 }
+
+/* 隐藏小眼睛 */
+a {
+    z-index: 100;
+    text-decoration: none;
+    color: white;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.woff2?t=1669304772186') format('woff2'),
+        url('font/iconfont.woff?t=1669304772186') format('woff'),
+        url('font/iconfont.ttf?t=1669304772186') format('truetype');
+}
+
+.page {
+    position: relative;
+    margin: auto;
+    height: 1060px;
+    justify-content: center;
+}
+
 .iconfont {
     position: absolute;
     font-family: "iconfont" !important;
@@ -42,71 +54,37 @@ input[type="password"]::-o-clear {
     opacity: 0.4;
 }
 
-.iconl {
-    top: 0;
-    left: 21px;
-    width: 49px;
-    height: 49px;
-    border-radius: 24.5px;
-    font-size: 49px;
-}
+/* 基础设置结束 */
 
-.linkIconl {
-    position: absolute;
-    top: 0;
-    width: 49px;
-    height: 49px;
-    border-radius: 24.5px;
-}
 
-.headtxt {
-    top: 8px;
-    font-family: Lato Medium;
-    font-size: 32px;
-}
 
-.iconr {
-    top: 0;
-    right: 20px;
-    width: 49px;
-    height: 49px;
-    border-radius: 24.5px;
-    font-size: 49px;
-}
-
-.linkIconr {
-    position: absolute;
-    top: 0;
-    width: 49px;
-    height: 49px;
-    border-radius: 24.5px;
-}
-
-.page {
-    position: relative;
-    margin: auto;
-    height: 1060px;
-    justify-content: center;
-}
-
-.back {
-    position: absolute;
-    top: 0;
-    width: 600px;
-    height: 1060px;
-}
-.back1 {
-    background:url(img/bg1.png);
-}
-.back2 {
-    background: url(img/bg2.png);
-    opacity: 0.01;
-}
-.bg {
+/* 背景设置开始 */
+.background {
     background: url(img/Background.png) no-repeat;
     width: 600px;
 }
 
+.backgroundStyle {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 1060px;
+}
+
+.backgroundMeteor {
+    background: url(img/bg1.png);
+}
+
+.blackBorder {
+    background: url(img/bg2.png);
+    opacity: 0.01;
+}
+
+/* 背景设置结束 */
+
+
+
+/* 头部设置 */
 .header {
     position: absolute;
     top: 32px;
@@ -118,10 +96,43 @@ input[type="password"]::-o-clear {
     color: white;
 }
 
+/* 退出图标设置 */
+.header .iconl {
+    top: 0;
+    left: 21px;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    font-size: 49px;
+}
+
+/* 头部文本 */
+.header .headtxt {
+    top: 8px;
+    font-family: Lato Medium;
+    font-size: 32px;
+}
+
+/* 详情页图标设置 */
+.header .iconr {
+    top: 0;
+    right: 20px;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    font-size: 49px;
+}
+
+/* 头部结束 */
+
+
+
+/* selectionOne即photo部分开始 */
 .selectionOne {
     position: relative;
     top: 170px;
-    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     width: 149px;
     height: 149px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -129,30 +140,38 @@ input[type="password"]::-o-clear {
     border-radius: 74.5px;
 }
 
-#mul {
+/* 大加号设置 */
+.selectionOne #mul {
     position: absolute;
     margin: auto;
     top: 36px;
     left: 50%;
-    margin-left: -32.5px;
-    width: 52px;
-    height: 52px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
     font-size: 65px;
     color: white;
     opacity: 0.8;
 }
 
-.selectionOneTxt {
+/* 文本设置 */
+.selectionOne .selectionOneTxt {
     position: absolute;
     top: 99px;
     left: 50%;
-    margin-left: -37px;
+    transform: translateX(-50%);
     font-size: 20px;
 }
 
-.selectionSec {
+/* selectionOne即photo部分结束 */
+
+
+
+/* 输入栏部分开始 */
+.selectionTwo {
     position: absolute;
-    left: 82px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 362px;
     width: 442px;
     height: 334px;
@@ -161,20 +180,23 @@ input[type="password"]::-o-clear {
     justify-content: space-evenly;
 }
 
-.inputBox {
+/* 输入框设置 */
+.selectionTwo .inputBox {
     height: 82px;
     width: 442px;
     background-color: transparent;
     outline: none;
 }
 
-input::placeholder {
+/* 改变输入后的文字样式 */
+.selectionTwo input::placeholder {
     color: white;
     opacity: 0.7;
     font-size: 26px;
 }
 
-.show {
+/* 替换小眼睛的Show */
+.selectionTwo .show {
     position: absolute;
     font-size: 26px;
     right: 0;
@@ -183,29 +205,39 @@ input::placeholder {
     background-color: transparent;
 }
 
-.line {
+/* 输入框的底线 */
+.selectionTwo .line {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.selectionThr {
+/* 输入框结束 */
+
+
+
+/* 按钮设置 */
+.selectionThree {
     position: relative;
     top: 587px;
-    left: 83px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 441px;
     height: 75px;
 }
 
-.button {
+/* 按钮样式设置 */
+.selectionThree .button {
     position: absolute;
     width: 441px;
     height: 75px;
     border-radius: 50px;
     font-size: 32px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     background: white;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
 }
-h1 {
+
+/* 穿透文字设置 */
+.selectionThree h1 {
     position: absolute;
     top: 23px;
     left: 50%;
@@ -216,6 +248,12 @@ h1 {
     color: transparent;
     -webkit-background-clip: text;
 }
+
+/* 按钮设置结束 */
+
+
+
+/* 底部文字设置 */
 .footer {
     position: absolute;
     margin: auto;
@@ -238,6 +276,7 @@ h1 {
 }
 
 .footTxt2 {
+    position: absolute;
     right: 155px;
     width: 80px;
     height: 30px;
@@ -246,7 +285,10 @@ h1 {
     color: #3cffb5;
 }
 
+/* 设置结束 */
+
+
+
 /* 1.定位 
 2.设置尺寸 
 3.设置盒子替他元素属性 */
-

@@ -9,20 +9,24 @@
 
 <body>
 
-    <div class="page bg">
-    <div class="back back1"></div>
-    <div class="back back2"></div>
+    <div class="page background">
+        <!-- 背景模块 -->
+        <div class="backgroundStyle backgroundMeteor"></div>
+        <div class="backgroundStyle blackBorder"></div>
+        <!-- 背景模块 -->
+
+        <!-- 头部 -->
         <div class="header">
             <div class="iconfont iconl">
-                <span>&#xe8a6;</span>
-                <a href="" class="linkIconl"></a>
+                <a href=""><span>&#xe8a6;</span></a>
             </div>
             <p class="headtxt">Sign Up</p>
             <div class="iconfont iconr">
-                <span>&#xe650;</span>
-                <a href="" class="linkIconr"></a>
+                <a href=""><span>&#xe650;</span></a>
             </div>
         </div>
+        <!-- 头部 -->
+        <!-- 照片 -->
         <div class="selectionOne">
             <div id="mul">
                 <span class="iconfont">&#xe613;</span>
@@ -30,22 +34,29 @@
             <p class="selectionOneTxt">PHOTO
             <p>
         </div>
-        <div class="selectionSec">
+        <!-- 照片 -->
+        <!-- 输入框 -->
+        <div class="selectionTwo">
             <div>
                 <input type="text" name="First Name" placeholder="First Name" class="inputBox line" />
             </div>
+
             <div>
                 <input type="text" name="Last Name" placeholder="Last Name" class="inputBox line" />
             </div>
+
             <div>
                 <input type="email" name="Email Address" placeholder="Email Address" class="inputBox line" />
             </div>
+
             <div>
                 <label for="">
                     <img src="img/Show.png" alt="" class="show" id="eye">
                 </label>
                 <input type="password" name="password" placeholder="Password" class="inputBox" id="pwd" />
             </div>
+
+            <!-- 设置password和text属性 -->
             <script>
                 // 1.获取元素
                 var eye = document.getElementById('eye');
@@ -65,16 +76,22 @@
                     }
                 }
             </script>
+            <!-- 设置password和text属性 -->
         </div>
-        <div class="selectionThr">
+        <!-- 输入框 -->
+        <!-- 按钮 -->
+        <div class="selectionThree">
             <button class="button" type="submit">
                 <h1>Sign UP</h1>
             </button>
         </div>
+        <!-- 按钮 -->
+        <!-- 底部文字 -->
         <div class="footer">
             <p class="footTxt1">Already a member?</p>
-            <a class="footTxt2">Sign In</a>
+            <a href="" class="footTxt2">Sign In</a>
         </div>
+        <!-- 底部文字 -->
     </div>
 </body>
 
