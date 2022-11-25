@@ -11,7 +11,7 @@ input {
 
 a {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
 }
 
 @font-face {
@@ -21,6 +21,17 @@ a {
         url('font/iconfont.ttf?t=1669304772186') format('truetype');
 }
 
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"]::-o-clear {
+    display: none;
+}
 .iconfont {
     position: absolute;
     font-family: "iconfont" !important;
@@ -78,6 +89,19 @@ a {
     justify-content: center;
 }
 
+.back {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 1060px;
+}
+.back1 {
+    background:url(img/bg1.png);
+}
+.back2 {
+    background: url(img/bg2.png);
+    opacity: 0.01;
+}
 .bg {
     background: url(img/Background.png) no-repeat;
     width: 600px;
@@ -177,11 +201,21 @@ input::placeholder {
     height: 75px;
     border-radius: 50px;
     font-size: 32px;
-    -webkit-text-fill-color:transparent ;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background:white;
+    background: white;
 }
-
+h1 {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    background: url(img/Background.png) 50% 50%;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}
 .footer {
     position: absolute;
     margin: auto;
@@ -196,23 +230,23 @@ input::placeholder {
     align-items: baseline;
 }
 
+.footTxt1 {
+    position: absolute;
+    left: 152px;
+    background-color: transparent;
+    font-size: 23px;
+}
+
 .footTxt2 {
+    right: 155px;
+    width: 80px;
+    height: 30px;
     background-color: transparent;
     font-size: 23px;
     color: #3cffb5;
 }
+
 /* 1.定位 
 2.设置尺寸 
 3.设置盒子替他元素属性 */
 
-h1 {
-    position: absolute;
-    top: 23px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 32px;
-    background:url(img/Background.png) 50% 50%;
-    background-size: cover;
-    color: transparent;
-    -webkit-background-clip: text;
-}

@@ -8,7 +8,10 @@
 </head>
 
 <body>
+
     <div class="page bg">
+    <div class="back back1"></div>
+    <div class="back back2"></div>
         <div class="header">
             <div class="iconfont iconl">
                 <span>&#xe8a6;</span>
@@ -44,31 +47,33 @@
                 <input type="password" name="password" placeholder="Password" class="inputBox" id="pwd" />
             </div>
             <script>
+                // 1.获取元素
                 var eye = document.getElementById('eye');
-                var inputPassword= document.getElementById('pwd');
-                var passwordBoolean = ture;
-                eye.addEventlistener('click', function () {
-                    if (!passwordBoolean) {
-                        eye.src = "img/Show.png";
-                        inputPassword.type = 'password'
+                var pwd = document.getElementById('pwd');
+                // 2.注册事件 处理程序
+                var flag = 0;
+                eye.onclick = function () {
+                    // 点击一次之后，flag一定要变化
+                    if (flag == 0) {
+                        pwd.type = 'text';
+                        eye.src = 'img/Hide.png';
+                        flag = 1; //赋值操作
+                    } else {
+                        pwd.type = 'password';
+                        eye.src = 'img/Show.png';
+                        flag = 0;
                     }
-                    else {
-                        eye.src = "img/Hide.png";
-                        inputPassword.type = 'text'
-                    }
-                    passwordBoolean = !passwordBoolean;
-
-                })
+                }
             </script>
         </div>
         <div class="selectionThr">
-            <button class="button">
+            <button class="button" type="submit">
                 <h1>Sign UP</h1>
             </button>
         </div>
         <div class="footer">
             <p class="footTxt1">Already a member?</p>
-            <button class="footTxt2">Sign In</button>
+            <a class="footTxt2">Sign In</a>
         </div>
     </div>
 </body>
