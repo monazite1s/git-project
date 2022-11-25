@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    font-size: 26px;
+    color: white;
+}
+
+a {
+    position: absolute;
+    z-index: 10;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.woff2?t=1669304772186') format('woff2'),
+        url('font/iconfont.woff?t=1669304772186') format('woff'),
+        url('font/iconfont.ttf?t=1669304772186') format('truetype');
+}
+
+.iconfont {
+    position: absolute;
+    font-family: "iconfont" !important;
+    /* font-size: 16px; */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 0.4;
+}
+
+.iconl {
+    top: 0;
+    left: 21px;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    font-size: 49px;
+}
+
+.linkIconl {
+    position: absolute;
+    top: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+}
+
+.headtxt {
+    top: 8px;
+    font-family: Lato Medium;
+    font-size: 32px;
+}
+
+.iconr {
+    top: 0;
+    right: 20px;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    font-size: 49px;
+}
+
+.linkIconr {
+    position: absolute;
+    top: 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+}
+
+.page {
+    position: relative;
+    margin: auto;
+    height: 1060px;
+    justify-content: center;
+}
+
+.bg {
+    background: url(img/Background.png) no-repeat;
+    width: 600px;
+}
+
+.header {
+    position: absolute;
+    top: 32px;
+    width: 600px;
+    height: 49px;
+    text-align: center;
+    font-family: Lato Medium;
+    font-size: 32px;
+    color: white;
+}
+
+.selectionOne {
+    position: relative;
+    top: 170px;
+    margin: auto;
+    width: 149px;
+    height: 149px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2PX SOLID rgba(255, 255, 255, 0.3);
+    border-radius: 74.5px;
+}
+
+#mul {
+    position: absolute;
+    margin: auto;
+    top: 36px;
+    left: 50%;
+    margin-left: -32.5px;
+    width: 52px;
+    height: 52px;
+    font-size: 65px;
+    color: white;
+    opacity: 0.8;
+}
+
+.selectionOneTxt {
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    margin-left: -37px;
+    font-size: 20px;
+}
+
+.selectionSec {
+    position: absolute;
+    left: 82px;
+    top: 362px;
+    width: 442px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputBox {
+    height: 82px;
+    width: 442px;
+    background-color: transparent;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-size: 26px;
+}
+
+.show {
+    position: absolute;
+    font-size: 26px;
+    right: 0;
+    color: #3cffb5;
+    bottom: 35px;
+    background-color: transparent;
+}
+
+.line {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.selectionThr {
+    position: relative;
+    top: 587px;
+    left: 83px;
+    width: 441px;
+    height: 75px;
+}
+
+.button {
+    position: absolute;
+    width: 441px;
+    height: 75px;
+    border-radius: 50px;
+    font-size: 32px;
+    -webkit-text-fill-color:transparent ;
+    -webkit-background-clip: text;
+    background:white;
+}
+
+.footer {
+    position: absolute;
+    margin: auto;
+    bottom: 200px;
+    width: 600px;
+    height: 23px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.footTxt2 {
+    background-color: transparent;
+    font-size: 23px;
+    color: #3cffb5;
+}
+/* 1.定位 
+2.设置尺寸 
+3.设置盒子替他元素属性 */
+
+h1 {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    background:url(img/Background.png) 50% 50%;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}

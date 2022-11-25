@@ -1,0 +1,11 @@
+总体：w600，h1060
+icon：t32	左l21	右r20	    w49   h49			txt：t8	字体Myriad Pro（Lato Medium???)，字号32px
+sign up：t40，w108，h30	
+photo：t170，w149，h149
+{
+	加号：t36，w52，h52
+	photo：t11					字体--，字号19.61
+}
+输入框：l82，t43，r76，w442，h270			字号26,链接shou字号23
+signicon：l83，t80，w441				字号32.96
+text：t35，l165		字号22.96

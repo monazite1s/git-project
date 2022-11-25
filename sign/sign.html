@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page bg">
+        <div class="header">
+            <div class="iconfont iconl">
+                <span>&#xe8a6;</span>
+                <a href="" class="linkIconl"></a>
+            </div>
+            <p class="headtxt">Sign Up</p>
+            <div class="iconfont iconr">
+                <span>&#xe650;</span>
+                <a href="" class="linkIconr"></a>
+            </div>
+        </div>
+        <div class="selectionOne">
+            <div id="mul">
+                <span class="iconfont">&#xe613;</span>
+            </div>
+            <p class="selectionOneTxt">PHOTO
+            <p>
+        </div>
+        <div class="selectionSec">
+            <div>
+                <input type="text" name="First Name" placeholder="First Name" class="inputBox line" />
+            </div>
+            <div>
+                <input type="text" name="Last Name" placeholder="Last Name" class="inputBox line" />
+            </div>
+            <div>
+                <input type="email" name="Email Address" placeholder="Email Address" class="inputBox line" />
+            </div>
+            <div>
+                <label for="">
+                    <img src="img/Show.png" alt="" class="show" id="eye">
+                </label>
+                <input type="password" name="password" placeholder="Password" class="inputBox" id="pwd" />
+            </div>
+            <script>
+                var eye = document.getElementById('eye');
+                var inputPassword= document.getElementById('pwd');
+                var passwordBoolean = ture;
+                eye.addEventlistener('click', function () {
+                    if (!passwordBoolean) {
+                        eye.src = "img/Show.png";
+                        inputPassword.type = 'password'
+                    }
+                    else {
+                        eye.src = "img/Hide.png";
+                        inputPassword.type = 'text'
+                    }
+                    passwordBoolean = !passwordBoolean;
+
+                })
+            </script>
+        </div>
+        <div class="selectionThr">
+            <button class="button">
+                <h1>Sign UP</h1>
+            </button>
+        </div>
+        <div class="footer">
+            <p class="footTxt1">Already a member?</p>
+            <button class="footTxt2">Sign In</button>
+        </div>
+    </div>
+</body>
+
+</html>
